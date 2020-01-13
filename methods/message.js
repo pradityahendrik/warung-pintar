@@ -10,4 +10,9 @@ exports.postMessage = async (request) => {
     return result;
 };
 
+exports.getMessageRealTime = async () => {
+    const result = await repo.getMessage();
+    return result;
+};
+
 module.exports = exports;
